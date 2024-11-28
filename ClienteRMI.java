@@ -7,7 +7,7 @@ public class ClienteRMI {
     public static void main(String[] args) {
         try {
             // Obtener registro en el puerto indicado:
-            Registry registro = LocateRegistry.getRegistry("localhost", 1234);
+            Registry registro = LocateRegistry.getRegistry("localhost", 1099);
 
             // Crear instancia de la implementación de la interfaz que hace referencia al
             // objeto remoto (ClienteRemoto):

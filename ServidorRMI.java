@@ -7,7 +7,7 @@ public class ServidorRMI {
             // Instancia de implementaciòn de la interfaz:
             BMIRremoto objetoRemoto = new BMIRremotoImpl();
             // Crear y obtener el registro de nombres de RMI:
-            Registry registro = LocateRegistry.createRegistry(1234);
+            Registry registro = LocateRegistry.createRegistry(1099);
             // Vincular el objeto remoto con el nombre que se le asigna (ClienteRemoto):
             registro.rebind("ClienteRemoto", objetoRemoto);
         } catch (Exception e) {
