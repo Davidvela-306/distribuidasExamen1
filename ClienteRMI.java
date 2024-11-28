@@ -2,7 +2,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
 
-public class cliente {
+public class ClienteRMI {
 
     public static void main(String[] args) {
         try {
@@ -11,7 +11,7 @@ public class cliente {
 
             // Crear instancia de la implementación de la interfaz que hace referencia al
             // objeto remoto (ClienteRemoto):
-            interfaz objetoRemoto = (interfaz) registro.lookup("ClienteRemoto");
+            BMIRremoto objetoRemoto = (BMIRremoto) registro.lookup("ClienteRemoto");
 
             // Pedir al usuario que ingrese su peso y altura
             Scanner scanner = new Scanner(System.in);

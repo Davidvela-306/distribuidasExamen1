@@ -1,9 +1,9 @@
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class implementacionInterfaz extends UnicastRemoteObject implements interfaz {
+public class BMIRremotoImpl extends UnicastRemoteObject implements BMIRremoto {
     // Trabajamos con el costructor Super:
-    public implementacionInterfaz() throws RemoteException {
+    public BMIRremotoImpl() throws RemoteException {
         super(); // Llamamos al constructor de la clase padre
     }
 
